@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Off Button</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body style="background-color: rgb(116, 116, 116);">
+
+    <div class="container">
+        <div class="profile">
+            <div class="profileImg">
+                <img src="./logo" alt="">
+            </div>
+            <div class="profileInfo">
+                <h3>SNOWMAN</h3>
+                <p>Web fontend developer</p>
+            </div>
+        </div>
+        <ul class="menu">
+            <li>
+                <label>
+                    <span class="title">Wi-fi</span>
+                    <span class="action">
+                        <input type="checkbox">
+                        <i></i>
+                    </span>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <span class="title">Wi-fi</span>
+                    <span class="action">
+                        <input type="checkbox">
+                        <i></i>
+                    </span>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <span class="title">Wi-fi</span>
+                    <span class="action">
+                        <input type="checkbox">
+                        <i></i>
+                    </span>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <span class="title">Wi-fi</span>
+                    <span class="action">
+                        <input type="checkbox">
+                        <i></i>
+                    </span>
+                </label>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        let allCheckBox = document.querySelectorAll("input")
+        allCheckBox.forEach((check) => {
+            check.addEventListener('click', () => {
+                if (check.checked) {
+                    console.log("Checkbox on");
+                } else if (!check.checked) {
+                    console.log("Checkbox off");
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>
